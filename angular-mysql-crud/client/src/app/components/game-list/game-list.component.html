@@ -1,0 +1,35 @@
+
+<div class="bs-docs-section2"> 
+    <div class="row">   
+        <h1>Titulos disponibles</h1>
+    </div>
+</div>
+
+
+<div class="bs-docs-section2"> 
+    <div class="row">
+        <div class="col-md-4" *ngFor="let game of games">
+            <div class="card text-center">
+                
+                <div class="card-header bg-dark d-flex text-white justify-content-between align-items-center p-1">
+                    {{game.title}}
+            
+                    <button class="btn btn-danger" (click)="deleteGame(game.id)">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                
+                </div>
+                
+                <img [src]="game.image" class="card-img-top" alt="">
+                <div class="card-body ">
+                    {{game.description}}
+               <a class="btn btn-info btn-block" [routerLink]="['/games/edit', game.id]">
+                        EDIT GAME
+                    </a>
+                </div>
+                
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

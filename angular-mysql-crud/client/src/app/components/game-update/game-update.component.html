@@ -1,0 +1,50 @@
+<div class="bs-docs-section2"> 
+    <div class="row">   
+        <h1>Actualizar titulo</h1>
+    </div>
+</div>
+
+
+<div class="bs-docs-section2"> 
+    <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="number" name="id" [(ngModel)]="game.id" placeholder="ID" class="form-control" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" name="title" [(ngModel)]="game.title" placeholder="Title" class="form-control" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea name="description" [(ngModel)]="game.description" rows="2" placeholder="Describe the game" class="form-control"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="url" name="image" [(ngModel)]="game.image" placeholder="Image" class="form-control" >
+                        </div>
+                        <br>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success btn-block" (click)="updateGamePP()">
+                                SAVE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-body text-center">
+                <img [src]="game.image == '' ? '/assets/noimage.png' : game.image"  class="card-img-top">
+                <br>
+                <h3>{{game.id}}. {{game.title == '' ? 'Game Title' : game.title}}</h3>
+                <p>{{game.description == '' ? 'Write ur description' : game.description}}</p>
+                <p>{{game.created_at | date: 'yyyy-MM-dd'}}</p>
+            </div>
+        </div>
+    </div>
+</div>
