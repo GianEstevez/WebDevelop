@@ -53,7 +53,7 @@ class GamesController {
     public async update (req: Request, res:Response){
         
         const { id } = req.params;
-        
+       
         await pool.query('UPDATE games set ? WHERE id = ?', [req.body,id] );
         res.json({message: 'The game was updated'});
         

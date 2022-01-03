@@ -19,7 +19,7 @@ export class GameUpdateComponent implements OnInit {
     title: '',
     description: '',
     image: '',
-    created_at: '2021-12-17 03:23:34'
+    created_at: new Date()
   };
 
 
@@ -27,12 +27,27 @@ export class GameUpdateComponent implements OnInit {
   constructor(private gameService: GamesService, private router: Router, private activeRoute: ActivatedRoute) { }
 
   ngOnInit(){
-    console.log(this.game)
+    const params = this.activeRoute.snapshot.params;   
+    delete this.game.created_at;    
+    console.log(params.id);
+    
+    if (params.id){
+      this.gameService.getGame(params.id)
+      .subscribe(
+        res => {
+          console.log(res);
+          this.game = res;
+          
+        },
+        err => console.log(err)
+      )
+    }
     
   }
 
   updateGamePP() {
-
+    delete this.game.created_at;
+    
     const varid = this.game.id;
     this.gameService.updateGame(varid, this.game)
     .subscribe(

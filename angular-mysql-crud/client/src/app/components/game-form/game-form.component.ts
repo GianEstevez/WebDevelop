@@ -27,7 +27,7 @@ export class GameFormComponent implements OnInit {
   constructor(private gameService: GamesService, private router: Router, private activeRoute: ActivatedRoute) { }
 
   ngOnInit(){
-    //this.updateGame();
+    this.updateGame();
   }
 
   saveNewGame() {
@@ -49,10 +49,11 @@ export class GameFormComponent implements OnInit {
   
 
   updateGame() {
-    this.game.created_at = '2021-12-17 03:23:34';
-    const params = this.activeRoute.snapshot.params;       
-    console.log(params);
-    const juego_id = params.id;
+    
+    const params = this.activeRoute.snapshot.params;   
+    delete this.game.created_at;    
+    console.log(params.id);
+    
     if (params.id){
       this.gameService.getGame(params.id)
       .subscribe(

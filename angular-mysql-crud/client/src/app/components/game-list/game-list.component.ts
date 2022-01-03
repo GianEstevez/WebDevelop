@@ -44,6 +44,7 @@ export class GameListComponent implements OnInit {
       res => {
         console.log(res);
         this.getGames();
+        
       }, 
       err => console.log(err)
     )

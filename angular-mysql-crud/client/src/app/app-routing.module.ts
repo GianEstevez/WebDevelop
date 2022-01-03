@@ -26,7 +26,7 @@ const routes: Routes = [
 
   {
     path: 'games/edit/:id',
-    component: GameFormComponent
+    component: GameUpdateComponent
   },
 
   {
