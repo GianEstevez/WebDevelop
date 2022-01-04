@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
+
+   
+<div class="container" align="center">
+    <br>
     <h1>Agregar persona</h1>
+    <br>
+    <div class="card" style="width: 38rem;">
+        <div class="card" style="width: 38rem;" >
+            <br>
+            <form method="post"> 
+                {% csrf_token %}
+                {{ form.as_p }} 
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
 
-
-    <form method="post"> 
-        {% csrf_token %}
-        {{ form.as_p }} 
-        <button type="submit">Crear</button>
-    </form>
-    
 </body>
 </html>

@@ -20,7 +20,7 @@ class PersonaCreate (CreateView):
 class PersonaUpdate (UpdateView):
     model = Persona
     form_class = PersonaForm
-    template_name = 'crear_persona.html'
+    template_name = 'editar_persona.html'
     success_url = reverse_lazy('index')
 
 class PersonaDelete (DeleteView):

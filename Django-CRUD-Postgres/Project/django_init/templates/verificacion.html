@@ -1,6 +1,29 @@
-<form method='post'>
-    {% csrf_token %}
-    <h1>Desea eliminar la persona {{ object }} ?</h1>
-    <button type="submit" name="button">Confirmar</button>
-    <a href="{% url 'index' %}">Cancelar</a>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+<div class="container" align="center"> 
+    <form method='post'>
+        {% csrf_token %}
+        <div class="form-group">
+        <h1>¿Desea eliminar la persona ' {{ object }} ' ?</h1>
+        </div>
+        <br>
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary" name="button">Confirmar</button>
+        <!--<button onclick="location.href='{% url 'index' %}'" class="btn btn-success" type="button">
+            Cancelar</button> -->
+        <a class="btn btn-success" href="{% url 'index' %}">Cancelar</a> 
+    </div>
+    </form>
+</div>
+</body>
+</html>
