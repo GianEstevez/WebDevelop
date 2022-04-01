@@ -1,0 +1,84 @@
+<html>
+   <head>
+      <title>The Materialize Selects Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <link rel="stylesheet" href="user.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+   </head>
+   <body>
+    <div class="contenedor2">
+          <form id="Formulario" action="index.html">
+            <div class="margenes">
+              <label for="Nombre">Nombre</label>
+              <br>
+              <input type="text" class="form-control" id="Nombre" size="67">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Apellidos">Apellidos</label>
+              <br>
+              <input type="text" class="form-control" id="Apellido" size="67">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Direccion">Dirección</label>
+              <br>
+              <input type="text" size="67" placeholder="Gianfranco Estevez Ruiz 2183074" class="form-control" id="Direccion">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Usuario">Usuario</label>
+              <br>
+              <input type="text" size="67" class="form-control" id="Usuario">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Contraseña">Contraseña</label>
+              <br>
+              <input type="password" size="67" class="form-control" id="Contreña">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Email">Email</label>
+              <br>
+              <input type="text" size="67" class="form-control" id="Email">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Telefono">Telefono</label>
+              <br>
+              <input type="text" size="67" class="form-control" id="Telefono">
+              <br>
+            </div>
+            <div class="margenes">
+              <label for="Pais">Pais: </label>
+              <br>
+              <select name="Pais" id="Pais" class="form-control">
+                <option selected>Choose...</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Mexico">Argentina</option>
+                <option value="Peru">EEUU</option>
+                <option value="España">Greenland</option>
+              </select>
+              <br>
+              <br>
+            </div>
+            <div class="center2">
+            <button>Menú</button>
+              </div>
+          </form>
+    </div>
+  </body>
+</html>

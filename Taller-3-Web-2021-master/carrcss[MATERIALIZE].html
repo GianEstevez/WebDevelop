@@ -1,0 +1,128 @@
+<html>
+   <head>
+      <title>The Materialize Selects Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <link rel="stylesheet" href="carr.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+   </head>
+   <body>   
+    <div class="contenedor2">
+      <div class = "row">
+        <div class="col s12 m12">
+          <div class="card"> 
+            <div class="card-content">               
+              <form  class="container" action="index.html">
+                <br>
+                <div class="centerspan">
+                <span class="card-title"><h3>Materialize CSS</h3></span>
+                </div>
+                <br>
+                <br>
+                <br>
+                  <div class = "row">
+
+                    <div class = "row">
+                        <label for="id_coche">Coche:</label>
+                        <input type="text" class="input-field col s12" id="id_coche" maxlength="11">              
+                    </div>
+                    <div class = "row">
+                        <label for="id_movidoa">Movido a:</label>
+                        <select class="input-field col s12" id="id_movidoa">
+                            <option>Elegir</option>
+                        </select>               
+                    </div>
+                    <div class = "row">
+                        <label for="id_tipocoche">Tipo coche:</label>
+                            <select class="input-field col s12" id="id_tipocoche">
+                            <option>Elegir</option>
+                        </select>           
+                    </div>
+                    <div class = "row">
+                        <label for="id_marca">Marca:</label>
+                        <select class="input-field col s12" id="id_marca">
+                        <option>Elegir</option>
+                        </select>
+                    </div>
+                    <div class = "row">
+                        <label for="id_user">Usuario:</label>
+                        <select class="input-field col s12" id="id_user">
+                        <option>Elegir Usuario</option>
+                        </select>
+                    </div>
+                    <div class = "row">
+                        <label for="modelo">Modelo:</label>
+                        <textarea class="input-field col s12" id="modelo" maxlength="60"></textarea>
+                    </div>
+                    <div class = "row">
+                        <label for="anio">Año: </label>
+                        <input type="text" class="input-field col s12" id="anio" maxlength="4">
+                    </div>
+                    <div class = "row">
+                        <label for="detalle">Detalle: </label>
+                        <textarea class="input-field col s12" id="detalle"></textarea>
+                    </div>	
+
+                    <div class = "row">
+                        <label for="motor">Motor:</label>
+                        <input type="text" class="input-field col s12" id="motor">
+                    </div>	
+                    
+                    <div class = "row">
+                        <label for="fechapub">Fecha de Publicación:</label>
+                        <input type="text" class="input-field col s12" id="fechapub" maxlength="10">        
+                    </div>
+
+                    <div class = "row">
+                        <label for="precio">Precio:</label>
+                        <input type="text" class="input-field col s12" id="precio">
+                    </div>
+                    
+                    <div class = "row">
+                        <label for="moneda">Moneda: </label>
+                        <input type="text" class="input-field col s12" id="moneda" maxlength="10">
+                    </div>
+
+                    <div class = "row">
+                        <label for="cc_pic01">Pic01:</label>
+                        <textarea class="input-field col s12" id="cc_pic01" maxlength="85"></textarea>
+                    </div>
+                    
+                    <div class = "row">
+                        <label for="cc_pic02">Pic02:</label>
+                        <textarea class="input-field col s12" id="cc_pic02" maxlength="85"></textarea>
+                    </div>
+                    <div class = "row">
+                        <label for="cc_pic03">Pic03:</label>
+                        <textarea class="input-field col s12" id="cc_pic03" maxlength="85"></textarea>
+                    </div>
+                    <div class = "row">
+                        <label for="cc_destac">Destacado: </label>
+                        <input type="text" class="input-field col s12" id="cc_destac" maxlength="2">
+                    </div>
+                    <div class="center2">
+                      <div class = "row">
+                        <button>Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>    
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>   
+</html>

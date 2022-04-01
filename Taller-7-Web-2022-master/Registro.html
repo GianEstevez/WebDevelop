@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+  <title>Taller 7</title>
+</head>
+
+
+<body>
+
+  <br>
+
+  <div class="col-md-6 offset-md-3">
+    <div class="card card-body" >
+      <div class="alert alert-info" role="alert" align="center">
+        Ingrese los datos
+      </div>
+
+      <form id="formulario" action="gian.html" onsubmit="return validar();">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Nombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" class="form-control" name="apellido" id="apellido">
+          </div>
+        </div>
+
+        <div class="form-group ">
+          <label for="user">Usuario</label>
+          <input type="text" class="form-control" id="user" name="user">
+        </div>
+
+        <div class="form-group ">
+          <label for="fecha">Fecha nacimiento</label>
+          <br>
+          <input type="date" name="fecha" id="fecha" min="1920-01-01" max="2020-7-31" class="form-control">
+        </div>
+        
+        <div class="form-group ">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" name="correo_usuario" id="correo">
+        </div>
+
+        <div class="form-group ">
+          <label for="Phone">Telefono</label>
+          <input type="phone" class="form-control" name="correo_usuario" id="telefono">
+        </div>
+
+        <div class="form-group ">
+          <label for="Contraseña">Contraseña</label>
+          <input type="password" class="form-control" name="contraseña" id="pass1">
+        </div>
+
+        <div class="form-group ">
+          <label for="Contraseña">Confirmar Contraseña</label>
+          <input type="password" class="form-control" name="contraseña1" id="pass2">
+        </div>
+
+        <div class="form-group ">
+          <label for="Contraseña">Residencia:</label>
+          <br>
+          <select name="departamento" id="departamento" class="form-control">
+          </select>
+        </div>
+
+        <div class="form-group ">
+          <select name="municipio" id="municipio" class="form-control">
+            <option value="">Seleccione Municipio</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Sign in/menu</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+
+    var formulario = document.getElementById('formulario');
+    var p1 = formulario.pass1;
+    var p2 = formulario.pass2;
+    var user = formulario.user;
+
+    function validar() {
+
+      if (p1.value != p2.value) {
+        alert("Las contraseñas no coinciden");
+        return false;
+      }
+      if (user.value.length > 20) {
+        alert('Maximo caracteres de usuario excedido');
+        return false;
+      } else if (user.value.length < 5) {
+        alert('Minimo caracteres de usuario faltante (5 Minimo)');
+        return false;
+      } else if (!ext.test(user.value)) {
+        alert('Usuario no válido (Revisar caracteres)');
+        return false;
+      }
+    }
+  </script>
+
+</body>
+
+</html>

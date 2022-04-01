@@ -1,0 +1,95 @@
+div.general {
+
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+td.xd{
+  margin-left: 55px;
+}
+
+tr.header {
+  background-color: #ffd340;
+  margin-left: 55px;
+}
+
+.centrado2 {
+  width: 210px;
+
+}
+
+.centrado {
+  width: 200px;
+  border: 1px solid #dae0e5;
+  border-radius: 160px;
+}
+
+.tabla {
+  border: 1px solid #dae0e5;
+  border-radius: 160px;
+}
+
+td.header {
+  width: 80%;
+  overflow: auto;
+  color: #007bff;
+}
+
+.calorias {
+  background-color: #3570ff;
+  color: white;
+  border-radius: 21%;
+  position: relative;
+  margin-left: auto;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 4%;
+}
+
+.grasas {
+  background-color: #00cbe0;
+  color: white;
+  border-radius: 21%;
+  position: relative;
+  margin-left: auto;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 4%;
+}
+
+.proteinas {
+  background-color: #00ad00;
+  color: white;
+  border-radius: 21%;
+  position: relative;
+  margin-left: auto;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 4%;
+}
+
+.carbohidratos {
+  background-color: #e60008;
+  color: white;
+  border-radius: 21%;
+  position: relative;
+  margin-left: auto;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 4%;
+}
+
+td.y text {
+  font-size: smaller;
+}
+
+
+
+.calorias {
+  background-color: #007bff;
+  color: white;
+  border-radius: 21%;
+  position: relative;
+  margin-left: auto;
+  font-size: smaller;
+}

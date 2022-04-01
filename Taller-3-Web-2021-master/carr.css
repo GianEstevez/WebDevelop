@@ -1,0 +1,72 @@
+*{
+  margin:0;
+  padding: 0;
+
+}
+
+body {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,30,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+.card-image{
+  height: 300px;
+  width:auto; 
+}
+
+.margenes{
+  margin-left: 10px;
+}
+.margen1{
+  width: 100%;
+  margin: auto;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(0, 109, 128);
+  padding: 10px;
+}
+
+.center2 {
+  margin: auto;
+  width: 10%;
+}
+
+.centerspan {
+  margin: auto;
+  width: 110%;
+}
+
+
+.contenedor{
+  width: 80%;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+}
+
+
+.contenedor2{
+  width: 50%;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+}
+
+.contenedor3{
+  width: 20%;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+}
+
+
+.contenedor4{
+  width: 10%;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+}
