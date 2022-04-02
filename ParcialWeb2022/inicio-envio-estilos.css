@@ -1,0 +1,133 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,203,255,1) 0%, rgba(211,215,216,1) 0%);
+  
+
+}
+
+font {
+    font-family: Garamond, serif;
+}
+
+.colores1 {
+    color: rgb(255, 255, 255);
+    padding: 1px 3px;
+    margin: 9px 7px 11px 3px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    float: right;
+}
+
+.colores2 {
+    color: rgb(255, 255, 255);
+    padding: 1px 3px;
+    margin: 9px 7px 11px 3px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    float: right;
+}
+
+.colores3 {
+    color: rgb(255, 255, 255);
+    padding: 1px 3px;
+    margin: 9px 7px 11px 3px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    float: right;
+}
+
+.colores4 {
+    color: rgb(255, 255, 255);
+    padding: 1px 3px;
+    margin: 9px 7px 11px 3px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    float: right;
+}
+
+.card {
+  margin: 0 auto; 
+  float: none;
+  margin-bottom: 10px; 
+  border-radius: 10px;
+}
+
+.borde-rows {
+    border: 1px solid #e1e5e9;
+    border-radius: 0.28rem;
+}
+
+.field-title {
+    text-align: left;
+    color: #1a5ba0;
+    margin: 9px 11px 11px 13px;
+    float: left;
+}
+
+.bg-aqua {
+    background-color: #20abc0;
+}
+
+.bg-blue {
+    background-color: #0970df;
+}
+
+.bg-green {
+    background-color: #32b653;
+}
+
+.bg-red {
+    background-color: #c22940;
+}
+
+.grid{
+    width: 100%;
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    box-shadow: 0 0px 1px 0 #00000033, 0 2px 7px 0 #00000030;
+}
+
+.flag{
+    display: flex;
+    background-color: #0a8124;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: xxx-large;
+    padding: 11px;
+    margin: 11px 1px 11px 11px;
+    border-radius: 6px;
+    width: 28%;
+    text-align: center;
+    color: #e2eaf0;
+    
+}
+
+.gustos-container{
+    border-radius: 7px;
+    margin: 12px;
+    width: 77%;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(21, 184, 206);
+}
+
+.header-icon {
+    width: 40%;
+    font-size: 100px;
+}
